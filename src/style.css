@@ -1,0 +1,31 @@
+.main-container{
+
+    background-image: url(../src/candado.jpg);
+    background-size: cover;
+}
+ .card-number {
+    color: whitesmoke;
+    font-size: 17px;
+    font-weight: bolder;
+ }
+ .name-lastname {
+    color: whitesmoke;
+    font-size: 17px;
+    font-weight: bolder;
+ }
+ .clave {
+    color:whitesmoke ;
+    font-size: 17px;
+    font-weight: bolder;
+ }
+ .type {
+    color: whitesmoke;
+    font-size: 17px;
+    font-weight: bolder;
+ }
+ .security {
+    color: black;
+    font-weight: bolder;
+    text-align: center;
+ }
+ 
