@@ -2,6 +2,7 @@
 
     background-image: url(../src/candado.jpg);
     background-size: cover;
+    background-position: center;
 }
  .card-number {
     color: whitesmoke;
@@ -27,5 +28,10 @@
     color: black;
     font-weight: bolder;
     text-align: center;
+    
+
+ }
+ .chip {
+   width: 120px;
  }
  
