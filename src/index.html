@@ -9,15 +9,17 @@
 
 <body>
   <header>
-    <h1>Card - Validation</h1>
+    <h1 class="title">Card - Validation</h1>
   </header>
   <div class="main-container">
     <main>
       <img class="chip" src="chip4.png" alt="">
+
       <p class="card-number">
         CARD NUMBER
       <form>
-        <input type="text" placeholder="16 digits">
+        <input type="text" id="ncard" value="" placeholder="0000 00000000 0000" pattern="^[0-9]+" maxlength="16"
+          required><br><br>
         </input>
       </form>
       </p>
@@ -26,26 +28,34 @@
       </p>
       <form>
         <input type="text" placeholder="**** ">
+
       </form>
     </main>
     <form>
-      <P class="clave">Password</P>
-      <input type="number" placeholder="**** ">
+      <P class="clave">
+        Password </P>
+      <input type="text" placeholder="**** ">
     </form>
-    <button type="button">Validate!</button>
+    <div class="button">
+      <button type="button">Validate!</button>
+    </div>
     <p class="type">
       VISA
     </p>
+
   </div>
   <em>
     <address>
-      <h6 class="security">
-        THIS CARD IS PROTECTED BY SECURITIESLISS,
-        DO NOT STEAL,
-        NO CLONES</h6>
+
+      <h6>
+        <div class="security">
+          <div>THIS CARD IS PROTECTED BY SECURITIESLISS. </div>
+          <div>NOT STEAL.</div>
+          <div> NOT CLONES.</div>
+        </div>
+      </h6>
   </em>
   </address>
-  </ul>
   </footer>
 
   <script src="index.js" type="module"></script>
