@@ -18,7 +18,13 @@
       <p class="card-number">
         CARD NUMBER
       <form>
-        <input type="text" id="ncard" value="" placeholder="0000 00000000 0000" pattern="^[0-9]+" maxlength="16"
+        <input type="text" 
+        onkeypress= "if(isNaN(this.value + String.fromCharCode(event.keyCode))) return false"
+        id="ncard" 
+        value="" 
+        placeholder="0000 00000000 0000"
+         pattern="^[0-9]+" 
+         maxlength="16"
           required><br><br>
         </input>
       </form>
@@ -27,14 +33,14 @@
         Name and last Name
       </p>
       <form>
-        <input type="text" placeholder="**** ">
+        <input type="text" placeholder="NN-NN ">
 
       </form>
     </main>
     <form>
       <P class="clave">
         Password </P>
-      <input type="text" placeholder="**** ">
+      <input type="text" placeholder="**** " + maxlength="4" mas>
     </form>
     <div class="button">
       <button type="button">Validate!</button>

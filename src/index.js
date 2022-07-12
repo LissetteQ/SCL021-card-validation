@@ -1,7 +1,13 @@
 import validator from './validator.js';
+function mostrarAlerta() {
+    
+    var numeroTarjeta = document.getElementById("ncard"); 
+    alert('Tarjeta bloqueada '+ numeroTarjeta.value);
+validator.isValid(numeroTarjeta.value);
+}
+{
+    var button= document.querySelector(".button");
+    button.addEventListener("click", mostrarAlerta)
 
-console.log(validator);
-function getvalue(){
-    var el = document.querySelector("#cardNumber");
     console.log(el.value);  
 }
