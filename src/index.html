@@ -20,7 +20,7 @@
       <form>
         <input type="text" 
         onkeypress= "if(isNaN(this.value + String.fromCharCode(event.keyCode))) return false"
-        id="ncard" 
+        id="nCard" 
         value="" 
         placeholder="0000 00000000 0000"
          pattern="^[0-9]+" 
@@ -29,7 +29,7 @@
         </input>
       </form>
       </p>
-      <p class="name-lastname">
+      <p id="nameLast"  class="name-lastname">
         Name and last Name
       </p>
       <form>
@@ -38,12 +38,13 @@
       </form>
     </main>
     <form>
-      <P class="clave">
+      <P id= "Password"class="clave">
         Password </P>
-      <input type="text" placeholder="**** " + maxlength="4" mas>
+      <input id="myInput"  type="text" placeholder="**** " + maxlength="4" mas>
+    <input type="checkbox" id="pass" class="check"> Ocultar <br><br>
     </form>
     <div class="button">
-      <button type="button">Validate!</button>
+      <button id="valid"  type="button">Validate!</button>
     </div>
     <p class="type">
       VISA
@@ -52,6 +53,8 @@
   </div>
   <em>
     <address>
+
+      <p class="validacion" id="validacion" ></p>
 
       <h6>
         <div class="security">

@@ -65,3 +65,12 @@
  body{ 
    background-image: url(../src/imagen\ para\ el\ final.jpg)
  }
+
+ .validacion{
+  color: rgb(246, 241, 173);
+  font-weight: bold;
+  text-align: center;
+  margin-left: 17px;
+  font-size: medium;
+  
+ }
