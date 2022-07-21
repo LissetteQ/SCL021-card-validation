@@ -9,15 +9,16 @@
 
 <body>
   <header>
-    <h1 class="title">Unlock Card</h1>
+    <h1 class="title">Desbloquee su tarjeta</h1>
   </header>
   <div class="main-container">
     <main>
       <img class="chip" src="chip4.png" alt="">
 
       <p class="card-number"> 
-        CARD NUMBER
-      <form>
+        Numero de tarjeta
+      </p>
+      <form autocomplete="off"> 
         <input type="text" 
         onkeypress= "if(isNaN(this.value + String.fromCharCode(event.keyCode))) return false"
         id="nCard" 
@@ -25,32 +26,26 @@
         placeholder="0000 00000000 0000"
          pattern="^[0-9]+" 
          maxlength="16"
-          required><br><br>
-        </input>
-      </form>
-      </p>
+          required/><br><br>
       <p id="nameLast"  class="name-lastname">
-        Name and last Name
+        Nombre y Apellido
       </p>
-      <form>
         <input type="text" placeholder="NN-NN ">
-
-      </form>
-    </main>
-    <form>
-      <P id= "Password"class="clave">
-        Password </P>
+      <p id= "Password" class="clave">
+        Clave de seguridad </p>
       <input id="myInput"  type="text" placeholder="**** " + maxlength="4" mas>
-    <input type="checkbox" id="pass" class="check"> Ocultar <br><br>
+    <input type="checkbox" id="pass" class="check">
+     <strong>Ocultar</strong> <br><br>
     </form>
     <div class="button">
-      <button id="valid"  type="button">Validate!</button>
+      <button id="valid"  type="button">Validar!</button>
     </div>
     <p class="type">
       VISA
     </p>
-
+    </main>
   </div>
+  <footer>
   <em>
     <address>
 
@@ -58,12 +53,13 @@
 
       <h6>
         <div class="security">
-          <div>DO NOT STEAL.</div>
-          <div>DO NOT CLONES.</div>
+          <div>No robes.</div>
+          <div>No clones.</div>
         </div>
       </h6>
+    </address>
   </em>
-  </address>
+  
   </footer>
 
   <script src="index.js" type="module"></script>
