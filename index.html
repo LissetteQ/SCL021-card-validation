@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Tarjeta de crédito válida</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1 class="title">Desbloquee su tarjeta</h1>
+  </header>
+  <div class="main-container">
+    <main>
+      <img class="chip" src="chip4.png" alt="">
+
+      <p class="card-number"> 
+        Numero de tarjeta
+      </p>
+      <form autocomplete="off"> 
+        <input type="text" 
+        onkeypress= "if(isNaN(this.value + String.fromCharCode(event.keyCode))) return false"
+        id="nCard" 
+        value="" 
+        placeholder="0000 00000000 0000"
+         pattern="^[0-9]+" 
+         maxlength="16"
+          required/><br><br>
+      <p id="nameLast"  class="name-lastname">
+        Nombre y Apellido
+      </p>
+        <input type="text" placeholder="NN-NN ">
+      <p id= "Password" class="clave">
+        Clave de seguridad </p>
+      <input id="myInput"  type="text" placeholder="**** " + maxlength="4" mas>
+    <input type="checkbox" id="pass" class="check">
+     <strong>Ocultar</strong> <br><br>
+    </form>
+    <div class="button">
+      <button id="valid"  type="button">Validar!</button>
+    </div>
+    <p class="type">
+      VISA
+    </p>
+    </main>
+  </div>
+  <footer>
+  <em>
+    <address>
+
+      <p class="validacion" id="validacion" ></p>
+
+      <h6>
+        <div class="security">
+          <div>No robes.</div>
+          <div>No clones.</div>
+        </div>
+      </h6>
+    </address>
+  </em>
+  
+  </footer>
+
+  <script src="index.js" type="module"></script>
+
+</body>
+
+</html>
